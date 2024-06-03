@@ -1,10 +1,13 @@
 // 'use client'
 import React from 'react';
+import styles from '../pages.style/Homepage.module.css';
 
 export default function Homepage() {
     return(
         <div>
-            <h1>yooo</h1>
+            <div className={styles.container}>
+                <h1>heyyy</h1>
+            </div>
         </div>
     )
 }
