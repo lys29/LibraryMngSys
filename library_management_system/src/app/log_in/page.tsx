@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./page.module.css";
-import Link from "next/link";
+import { Link } from 'react-router-dom';
 
 export default function log_in() {
     return(        
@@ -19,7 +19,7 @@ export default function log_in() {
                 </div>
 
                 <div className={styles.btn}>
-                    <button className={styles.login_btn}>Log In</button>   
+                    <Link to='/'> <button className={styles.login_btn}>Log In</button> </Link>   
                 </div> 
             </div>
 
@@ -27,11 +27,11 @@ export default function log_in() {
 
                 <div className={styles.register}>
                     <p className={styles.question}>Already have an account?</p>
-                    <Link href="./register/page" className={styles.register_btn}>Register</Link>
+                    <Link to='/register'> <button className={styles.register_btn}>Register </button></Link>
                 </div>  
 
                 <div className={styles.recovery}>
-                    <Link href="./pass_recovery/page" className={styles.register_btn}>Forgot Password?</Link>   
+                    <Link to='/password_recovery'> <button className={styles.register_btn}>Forgot Password? </button> </Link>   
                 </div> 
             </div>     
     </form>

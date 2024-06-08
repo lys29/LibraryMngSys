@@ -4,6 +4,6 @@ import Link from "next/link";
 
 export default function register() {
     return(        
-        <h1>asdfasf</h1>
+        <h1>REGISTER PAGE</h1>
     )
 }
